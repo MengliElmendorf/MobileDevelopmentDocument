@@ -1,0 +1,8 @@
+# 1. Cherry pick commits from one repository to another one
+git remote add temp https://example.link/repository.git
+git remote -v       #(optional: to check remote)
+git fetcth temp
+git log temp/branch #(optional: to log all the commits)
+git cherry-pick commit#
+git push
+git remote rm temp  #remove temperoray remote
