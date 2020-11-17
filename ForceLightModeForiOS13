@@ -1,0 +1,9 @@
+App-Info.plist:
+    Step1: add following configuration
+        <key>User Interface Style</key>
+            <string>Light</string>
+
+    Step2: add following code in app delegate
+        if (@available(iOS 13.0, *)) {
+                self.window.overrideUserInterfaceStyle = UIUserInterfaceStyleLight;
+        }
